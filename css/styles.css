@@ -163,9 +163,15 @@ img {
 /**------------------- HERO -----------------*/
 .hero {
   background-color: var(--dark-osh-color);
-}
-
-.hero-section {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
   padding: 188px 0;
   display: flex;
   margin: auto;
@@ -220,6 +226,18 @@ img {
 .descr-img-item {
   width: calc((100% - 48px) / 3);
 }
+
+.icon-rect {
+  background-color: var(--light-body-color);
+  min-width: 264px;
+  min-height: 112px;
+  border-radius: 4px;
+}
+
+.descr-icon {
+  margin: 0 auto;
+  display: block;
+}
 /**------------------- TEAM -----------------*/
 .team {
   background-color: var(--light-body-color);
@@ -249,6 +267,21 @@ img {
 }
 .member-text {
   text-align: center;
+}
+
+/**------------------- CUSTOMERS -----------------*/
+.customers {
+}
+
+.customers-item {
+  min-width: 168px;
+  min-height: 88px;
+  border: 1px solid var(--subtle-text-color);
+  border-radius: 4px;
+}
+
+.customers-icon {
+  fill: var(--subtle-text-color);
 }
 /**------------------- FOOTER -----------------*/
 .footer {
