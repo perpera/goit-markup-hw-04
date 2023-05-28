@@ -313,10 +313,6 @@ img {
   height: 88px;
 }
 
-.customers-icon {
-  fill: currentColor;
-}
-
 .customers-link {
   width: 100%;
   height: 100%;
@@ -332,11 +328,17 @@ img {
   border-color: var(--pressed-state-color);
 }
 
+.customers-icon {
+  fill: currentColor;
+}
+
 .customers-link:hover .customers-icon {
   fill: var(--pressed-state-color);
+  color: var(--pressed-state-color);
 }
 .customers-link:focus .customers-icon {
   fill: var(--pressed-state-color);
+  color: var(--pressed-state-color);
 }
 /**------------------- FOOTER -----------------*/
 .footer {
@@ -383,6 +385,11 @@ img {
   align-items: center;
   gap: 16px;
 }
+
+.footer-media-link:hover,
+.footer-media-link:focus {
+  background-color: var(--success-color);
+}
 /**------------------- PORTFOLIO buttons -----------------*/
 .portfolio {
   padding-top: 96px;
@@ -405,7 +412,8 @@ img {
 .pf-btn:focus {
   color: var(--white-background-color);
   border: 1px solid transparent;
-  0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pf-btn-list {
