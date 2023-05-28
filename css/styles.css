@@ -270,18 +270,30 @@ img {
 }
 
 /**------------------- CUSTOMERS -----------------*/
-.customers {
-}
-
 .customers-item {
-  min-width: 168px;
-  min-height: 88px;
-  border: 1px solid var(--subtle-text-color);
-  border-radius: 4px;
+  width: 168px;
+  height: 88px;
 }
 
 .customers-icon {
   fill: var(--subtle-text-color);
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--subtle-text-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+}
+.customers-link:hover {
+  border-color: var(--accent-color);
+
+.customers-link:hover .customers-icon {
+  fill: #ff6c00;
 }
 /**------------------- FOOTER -----------------*/
 .footer {
@@ -329,6 +341,7 @@ img {
   margin-bottom: 72px;
 }
 
+/**------------------- PORTFOLIO -----------------*/
 .pf-list {
   flex-wrap: wrap;
   column-gap: 24px;
@@ -344,4 +357,15 @@ img {
   border: 1px solid var(--light-accent-color);
   border-top: none;
   margin-bottom: 8px;
+}
+
+.pf-link {
+  display: block;
+  padding: 0;
+}
+
+.pf-link:hover,
+.pf-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
