@@ -118,10 +118,16 @@ img {
   height: auto;
 }
 
+.icon {
+  fill: var(--light-body-color);
+}
+
 /**------------------- HEADER -----------------*/
 .header {
   background-color: var(--white-background-color);
   border-bottom: 1px solid var(--light-accent-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -167,7 +173,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-image.png);
+    url(../images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -260,6 +266,8 @@ img {
 .team-card {
   width: calc((100% - 72px) / 4);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-member-info {
@@ -297,7 +305,7 @@ img {
 }
 .soc-media-link:hover,
 .soc-media-link:focus {
-  background-color: var(--success-color);
+  background-color: var(--pressed-state-color);
 }
 /**------------------- CUSTOMERS -----------------*/
 .customers-item {
@@ -306,12 +314,13 @@ img {
 }
 
 .customers-icon {
-  fill: var(--subtle-text-color);
+  fill: currentColor;
 }
 
 .customers-link {
   width: 100%;
   height: 100%;
+  color: var(--subtle-text-color);
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
   display: flex;
@@ -320,14 +329,14 @@ img {
 }
 .customers-link:hover,
 .customers-link:focus {
-  border-color: var(--accent-color);
+  border-color: var(--pressed-state-color);
 }
 
 .customers-link:hover .customers-icon {
-  fill: var(--accent-color);
+  fill: var(--pressed-state-color);
 }
 .customers-link:focus .customers-icon {
-  fill: var(--accent-color);
+  fill: var(--pressed-state-color);
 }
 /**------------------- FOOTER -----------------*/
 .footer {
@@ -337,6 +346,7 @@ img {
 
 .footer-cont {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-text-cont {
@@ -395,6 +405,7 @@ img {
 .pf-btn:focus {
   color: var(--white-background-color);
   border: 1px solid transparent;
+  0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pf-btn-list {
