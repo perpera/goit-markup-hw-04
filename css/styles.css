@@ -326,19 +326,20 @@ img {
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--pressed-state-color);
+  color: var(--pressed-state-color);
 }
 
-.customers-icon {
-  fill: currentColor;
-}
-
-.customers-link:hover .customers-icon {
+/* .customers-link:hover .customers-icon {
   fill: var(--pressed-state-color);
   color: var(--pressed-state-color);
 }
 .customers-link:focus .customers-icon {
   fill: var(--pressed-state-color);
   color: var(--pressed-state-color);
+} */
+
+.customers-icon {
+  fill: currentColor;
 }
 /**------------------- FOOTER -----------------*/
 .footer {
