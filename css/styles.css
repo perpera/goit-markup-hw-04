@@ -287,13 +287,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: currentColor;
 }
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
   border-color: var(--accent-color);
+}
 
 .customers-link:hover .customers-icon {
-  fill: #ff6c00;
+  fill: var(--accent-color);
+}
+.customers-link:focus .customers-icon {
+  fill: var(--accent-color);
 }
 /**------------------- FOOTER -----------------*/
 .footer {
